@@ -1,0 +1,166 @@
+:root {
+    --celeste:#37bbed;
+    --azul: #157ba1;
+    --naranja: #ed9537;
+    --marron: #a15505;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+}
+
+.suscriptx {
+    margin: 20rem;
+    text-align: center;
+}
+
+.suscrpitx img {
+    max-width: 100%;
+}
+
+header {
+    background-color: var(--celeste);
+    width: 100vw;
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    line-height: 3.75rem;
+    padding: 0 1.5rem;
+    color: white;
+    transition: background-color .25s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: var(--azul);
+}
+
+.logo {
+    background-image: url(../img/logo\ e\ isologo\ fondo\ celeste.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+    width: 250px;
+}
+
+main {
+    background-color: var(--naranja);
+}
+
+main section {
+    display: none;
+    width: 90%;
+    margin: 3.75rem auto 2.5rem;
+    height: 100vh;
+    padding: 3rem;
+    background-color: white;
+}
+
+h1, h2 {
+    font-family: 'Encode Sans';
+    padding-bottom: 1rem;
+}
+
+#musica {
+    background-color: var(--naranja);
+}
+
+#videos:target {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+
+#videos iframe {
+    max-width: 100%;
+}
+
+#videos div {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#nosotrxs:target, #musica:target, #contacto:target {
+    display: block;
+}
+
+#nosotrxs {
+    column-count: 2;
+    column-gap: 2rem;
+    text-align: justify;
+}
+
+form {
+    margin: 8rem 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+form label {
+    text-align: center;
+}
+
+#borrar {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+#submit {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.boton {
+    margin: auto 10rem;
+    
+}
+
+footer {
+    background-color: var(--azul);
+    width: 100vw;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.social-bar {
+    display: flex;
+    margin: auto 3rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-bar li a {
+    color: white;
+}
+
