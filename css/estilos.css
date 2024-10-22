@@ -15,8 +15,12 @@
 }
 
 .suscriptx {
-    margin: 20rem;
+    margin: auto;
+    padding: 3em;
+    max-width: 90vw;
+    height: 100vh;
     text-align: center;
+    background-color: white;
 }
 
 .suscrpitx img {
@@ -157,7 +161,8 @@ h1, h2 {
     background-color: var(--azul);
     border: .15rem solid white;
     border-radius: 100%;
-    cursor: pointer;    
+    cursor: pointer;
+    transition: background-color .1s ease-in-out;    
     }
 
 .galeria label:hover {
@@ -250,9 +255,16 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    li a {
+        color: white;
+        transition: color .1s ease-in-out;
+    }
+
+    li a:hover {
+        color: var(--celeste);
+    }
+
 }
 
-.social-bar li a {
-    color: white;
-}
 
