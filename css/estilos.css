@@ -132,6 +132,7 @@ h1, h2 {
     text-align: justify;
     text-wrap: pretty;
     line-height: 1.5rem;
+    margin: auto 2rem;
 }
 
 .galeria {
@@ -210,32 +211,53 @@ input#boton7:checked ~ img#foto7 {
 }
 
 form {
-    margin: 8rem 30rem;
+    margin: 3rem auto;
+    padding: 1rem;
+    width: 25vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-}
 
-form label {
-    text-align: center;
-}
+    label {
+        text-align: start;
+    }
 
-#borrar {
-    grid-row-start: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
 
-}
+    .boton {
+        margin: auto;
+        padding: .5rem;
+        width: 100px;
+        text-align: center;
+        border: none;
+        border-radius: .25rem;
+        cursor: pointer;
+        color: white;
+        transition: background-color .15s ease-in-out
+    }
 
-#submit {
-    grid-row-start: 5;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
+    #borrar {
+        background-color: var(--naranja);
+    }
 
-.boton {
-    margin: auto 10rem;
-    
+    #borrar:hover {
+        background-color: var(--marron);
+        outline: var(--naranja) solid 3px;
+    }
+
+    #submit {
+        background-color: var(--celeste);
+        
+    }
+
+    #submit:hover {
+        background-color: var(--azul);
+        outline: var(--celeste) solid 3px;
+    }
+
 }
 
 footer {
