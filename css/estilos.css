@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-.suscriptx {
+/* .suscriptx {
     margin: auto;
     padding: 3em;
     max-width: 90vw;
@@ -26,7 +26,7 @@
 .suscrpitx img {
     max-width: 100%;
 }
-
+ */
 body {
     background-color: var(--naranja);
 }
@@ -84,9 +84,10 @@ nav ul li a:hover {
 
 main section {
     display: none;
+    height: 100vh;
     width: 90%;
     margin: 3.75rem auto 2.5rem;
-    padding: 3rem 1rem;
+    padding: 1rem;
     background-color: white;
 }
 
@@ -95,9 +96,21 @@ h1, h2 {
     padding-bottom: 1rem;
 }
 
-#musica {
+#musica:target {
     height: 100vh;
-    background-color: var(--naranja);
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 3.75rem;
+    width: 80%;
+    height:100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    iframe {
+        max-width: 100%;
+    }
 }
 
 #videos:target {
@@ -118,7 +131,7 @@ h1, h2 {
     grid-column-end: 3;
 }
 
-#nosotrxs:target, #musica:target, #contacto:target {
+#nosotrxs:target, #contacto:target {
     display: block;
 }
 
@@ -217,6 +230,7 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    place-content: center center;
 
     label {
         text-align: start;
