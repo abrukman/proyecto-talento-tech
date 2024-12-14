@@ -1,13 +1,18 @@
-
+//cargar pagina en section 'nosotrxs'
+window.onload = () => {
+    if (window.location.hash !== '#nosotrxs') {
+        window.location.hash = 'nosotrxs';
+    };
+};
 
 //menu hamburguesa
 const botonMenu = document.getElementById('menu');
 const navBar = document.getElementById('navbar');
-console.log(botonMenu, navBar);
+console.log(window.innerWidth);
 
 const mostrarMenu = () => {
     navBar.classList.toggle('oculto');
-}
+};
 
 botonMenu.addEventListener('click', mostrarMenu);
 navBar.addEventListener('click', mostrarMenu);
