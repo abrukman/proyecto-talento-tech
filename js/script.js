@@ -18,7 +18,6 @@ botonMenu.addEventListener('click', mostrarMenu);
 navBar.addEventListener('click', mostrarMenu);
 
 //funcionalidad formulario
-
 const nombreUsuario = document.getElementById('nombre');
 const botonSuscribirse = document.getElementById('submit');
 const dialog = document.getElementById('suscripto');
