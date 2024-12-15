@@ -126,69 +126,44 @@ main {
         box-shadow: 6px 6px 10px gray;
         position: relative;
 
-        input {
-            display: none;
-        }
-
-        label {
-            position: relative;
-            z-index: 1;
-            top: 89%;
-            left: 35%; 
-            margin: .2rem;
-            float: left;
-            width: .75rem;
-            height: .75rem;
-            background-color: var(--azul);
-            border: .15rem solid white;
-            border-radius: 100%;
-            cursor: pointer;
-            transition: background-color .1s ease-in-out;    
-            }
-
-        label:hover {
-            background-color: var(--naranja);
-        }
-
-        img {
+        .fotos {
             max-width: 100%;
             position: absolute;
             left: 0;
             opacity: 0;
-            transition: opacity .2s ease-in-out;
+            transition: opacity .5s ease-in-out;
+        }
+
+        .activa {
+            opacity: 1;
+        }
+
+        .botonera {
+            position: absolute;
+            bottom: 1%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .flechas {
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: x-large;
+                text-shadow: 2px 2px 5px gray;
+                margin: 0.1rem .5rem;
+                transition: all .1s ease-in-out;
+                cursor:pointer;
+            }
+
+            .flechas:hover {
+                transform: scale(1.5);
+            }
         }
 
         #foto7 {
             top: -35%;
         }
-        
-        input#boton1:checked ~ img#foto1 {
-            opacity: 1;
-        }
-        
-        input#boton2:checked ~ img#foto2 {
-            opacity: 1;
-        }
-            
-        input#boton3:checked ~ img#foto3 {
-            opacity: 1;
-        }
-        
-        input#boton4:checked ~ img#foto4 {
-            opacity: 1;
-        }
-        
-        input#boton5:checked ~ img#foto5 {
-            opacity: 1;
-        }
-        
-        input#boton6:checked ~ img#foto6 {
-            opacity: 1;
-        }
-        
-        input#boton7:checked ~ img#foto7 {
-            opacity: 1;
-        }
+
     }
 }
 

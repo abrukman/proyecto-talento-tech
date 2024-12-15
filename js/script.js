@@ -8,7 +8,6 @@ window.onload = () => {
 //menu hamburguesa
 const botonMenu = document.getElementById('menu');
 const navBar = document.getElementById('navbar');
-console.log(window.innerWidth);
 
 const mostrarMenu = () => {
     navBar.classList.toggle('oculto');
@@ -35,7 +34,49 @@ botonSuscribirse.addEventListener('click', (e) => {
 
 botonCerrarDialog.addEventListener('click', () => {
     dialog.close();
-})
+});
+
+//galeria de fotos
+const fotos = document.getElementsByClassName('fotos');
+const galeria = document.getElementById('galeria');
+const btnAtras = document.getElementById('atras');
+const btnAdelante = document.getElementById('adelante');
+let fotoActiva = 0;
+console.log(fotoActiva);
+
+const resetearGaleria = () => {
+    for (let i = 0; i < fotos.length; i++) {
+        fotos[i].classList.remove('activa');
+    };
+    fotos[fotoActiva].classList.toggle('activa');
+};
+
+const pasarALaSigFoto = () => {
+    if (fotoActiva === fotos.length - 1) {
+        fotoActiva = 0;
+        resetearGaleria();
+    } else {
+        fotoActiva += 1;
+        resetearGaleria();
+    };
+};
+
+const pasarALaFotoAnt = () => {
+    if (fotoActiva === 0) {
+        fotoActiva = fotos.length - 1;
+        resetearGaleria();
+    } else {
+        fotoActiva -= 1;
+        resetearGaleria();
+    };
+};
+
+resetearGaleria();
+
+btnAdelante.addEventListener('click', pasarALaSigFoto);
+btnAtras.addEventListener('click', pasarALaFotoAnt);
+
+
 
 
 
