@@ -76,6 +76,27 @@ resetearGaleria();
 btnAdelante.addEventListener('click', pasarALaSigFoto);
 btnAtras.addEventListener('click', pasarALaFotoAnt);
 
+//albumes
+
+const sectionMusica = document.getElementById('musica');
+console.log(sectionMusica)
+fetch('../albums.json')
+.then(response => {
+    return response.json();
+})
+.then(data => {
+    console.log(data);
+    for (let i = 0; i < data.length; i++) {
+        const albumDiv = document.createElement('div');
+        albumDiv.classList.add('album');
+        albumDiv.innerHTML = `<img class='tapaDisco'src='${data[i].tapa}' alt='portada ${data[i].nombre}'>
+        <h3>${data[i].nombre}</h3>
+        <button class='play'><i class="fa-solid fa-play"></i></button>`;
+        console.log(albumDiv)
+        sectionMusica.appendChild(albumDiv);
+    };
+});
+
 
 
 
