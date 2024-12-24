@@ -7,34 +7,34 @@
         "tracks": 
         [
             {
-            "id": 1,
+            "id": "01",
             "titulo": "anajnu maaminim",
-            "src":"albums/Barbacoaj - Barbacoaj/Barbacoaj - Barbacoaj - 01 Anajnu Maaminim.mp3"
+            "src":"../albums/Barbacoaj/01 Anajnu Maaminim.mp3"
             },
             {
-            "id": 2,
+            "id": "02",
             "titulo": "mashiaj",
-            "src":"albums/Barbacoaj - Barbacoaj/Barbacoaj - Barbacoaj - 02 Mashiaj.mp3"
+            "src":"../albums/Barbacoaj/02 Mashiaj.mp3"
             },
             {
-            "id": 3,
+            "id": "03",
             "titulo": "tijeras",
-            "src":"albums/Barbacoaj - Barbacoaj/Barbacoaj - Barbacoaj - 03 Tijeras.mp3"
+            "src":"../albums/Barbacoaj/03 Tijeras.mp3"
             },
             {
-            "id": 4,
+            "id": "04",
             "titulo": "eh ruso!",
-            "src":"albums/Barbacoaj - Barbacoaj/Barbacoaj - Barbacoaj - 04 Eh Ruso!.mp3"
+            "src":"../albums/Barbacoaj/04 Eh Ruso!.mp3"
             },
             {
-            "id": 5,
+            "id": "05",
             "titulo": "rikudim",
-            "src":"albums/Barbacoaj - Barbacoaj/Barbacoaj - Barbacoaj - 05 Rikudim.mp3"
+            "src":"../albums/Barbacoaj/05 Rikudim.mp3"
             },
             {
-            "id": 6,
+            "id": "06",
             "titulo": "sefaradi",
-            "src":"albums/Barbacoaj - Barbacoaj/Barbacoaj - Barbacoaj - 06 Sefaradi.mp3"
+            "src":"../albums/Barbacoaj/06 Sefaradi.mp3"
             }
         ]
     },
@@ -46,53 +46,53 @@
         "tracks": [
             {
             "id": "01",
-            "nombre": "ceviche y cerveza",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 01 Ceviche y cerveza.mp3"
+            "titulo": "ceviche y cerveza",
+            "src":"../albums/Artistico/01 Ceviche y cerveza.mp3"
             },
             {
             "id": "02",
             "titulo": "la tienda del judio pobre",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 02 La Tienda Del Judio Pobre.mp3"
+            "src":"../albums/Artistico/02 La Tienda Del Judio Pobre.mp3"
             },
             {
             "id": "03",
             "titulo": "dueños de la mentira",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 03 Dueños De La Mentira.mp3"
+            "src":"../albums/Artistico/03 Dueños De La Mentira.mp3"
             },
             {
             "id": "04",
             "titulo": "por las noches",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 04 Por Las Noches.mp3"
+            "src":"../albums/Artistico/04 Por Las Noches.mp3"
             },
             {
             "id": "05",
             "titulo": "los pibes crudos",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 05 Los Pibes Crudos.mp3"
+            "src":"../albums/Artistico/05 Los Pibes Crudos.mp3"
             },
             {
             "id": "06",
             "titulo": "la leyenda de spinetta sin cabeza",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 06 La Leyenda De Spinetta Sin Cabeza.mp3"
+            "src":"../albums/Artistico/06 La Leyenda De Spinetta Sin Cabeza.mp3"
             },
             {
             "id": "07",
             "titulo": "seguir viviendo sin tu amor",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 07 Seguir Viviendo Sin Tu Amor.mp3"
+            "src":"../albums/Artistico/07 Seguir Viviendo Sin Tu Amor.mp3"
             },
             {
             "id": "08",
             "titulo": "nube paraguaya",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 08 Nube Paraguaya.mp3"
+            "src":"../albums/Artistico/08 Nube Paraguaya.mp3"
             },
             {
             "id": "09",
             "titulo": "pobre cotur",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 09 Pobre Cotur.mp3"
+            "src":"../albums/Artistico/09 Pobre Cotur.mp3"
             },
             {
             "id": "10",
             "titulo": "artistico",
-            "src":"albums/Barbacoaj - Artístico/Barbacoaj - Artístico - 10 Artístico.mp3"
+            "src":"../albums/Artistico/10 Artístico.mp3"
             }
         ]
     }

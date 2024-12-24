@@ -77,25 +77,38 @@ btnAdelante.addEventListener('click', pasarALaSigFoto);
 btnAtras.addEventListener('click', pasarALaFotoAnt);
 
 //albumes
-
 const sectionMusica = document.getElementById('musica');
-console.log(sectionMusica)
 fetch('../albums.json')
 .then(response => {
     return response.json();
 })
 .then(data => {
-    console.log(data);
     for (let i = 0; i < data.length; i++) {
+        const tracksArr = data[i].tracks;
+        const albumTracklist = document.createElement('ol');
+        albumTracklist.id = `${data[i].nombre}-tracklist`;
+        albumTracklist.classList.add('tracklist');
+        for (let t = 0; t < tracksArr.length; t++) {
+            albumTracklist.innerHTML += `<li><audio id='${tracksArr[t].titulo}' src='${tracksArr[t].src}'></audio>${tracksArr[t].id} - ${tracksArr[t].titulo}</li>`;
+        };
         const albumDiv = document.createElement('div');
         albumDiv.classList.add('album');
-        albumDiv.innerHTML = `<img class='tapaDisco'src='${data[i].tapa}' alt='portada ${data[i].nombre}'>
+        albumDiv.appendChild(albumTracklist);
+        albumDiv.innerHTML += `<img class='tapaDisco'src='${data[i].tapa}' alt='portada ${data[i].nombre}'>
         <h3>${data[i].nombre}</h3>
-        <button class='play'><i class="fa-solid fa-play"></i></button>`;
-        console.log(albumDiv)
-        sectionMusica.appendChild(albumDiv);
+        <div class="botonera">
+            <button id='prev-track-${data[i].nombre}' class='secundario'><i class="fa-solid fa-backward-step"></i></button>
+            <button id='play-${data[i].nombre}' class='principal'><i class="fa-solid fa-play"></i></button>
+            <button id='next-track-${data[i].nombre}' class='secundario'><i class="fa-solid fa-forward-step"></i></i></button>
+        </div>`;
+        sectionMusica.appendChild(albumDiv);    
     };
+
+    //reproduccion de musica
+    const barbacoajAlbum = document.getElementById('barbacoaj-tracklist');
+    console.log(barbacoajAlbum);
 });
+
 
 
 
